@@ -1,6 +1,18 @@
 .section{
     display: grid;
+    padding: 15%;
     place-items: center;
     margin: auto;
+}
+
+.loginbutton{
+    display:grid;
+    margin: 1em;
+
+}
+
+.resetbutton{
+    display: grid;
+    margin: 1em;
 }
 
