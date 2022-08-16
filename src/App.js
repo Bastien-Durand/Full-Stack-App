@@ -1,13 +1,11 @@
 import Login from './Components/Login';
-import Homepage from './Components/Homepage';
+import People from './Components/People';
 import './App.css';
 
 function App() {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
-  return (
-    <div className='App'>{isAuthenticated ? <Homepage /> : <Login />}</div>
-  );
+  return <div className='App'>{isAuthenticated ? <People /> : <Login />}</div>;
 }
 
 export default App;
