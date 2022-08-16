@@ -3,7 +3,7 @@ import People from './Components/People/People';
 import './App.css';
 
 function App() {
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return <div className='App'>{isAuthenticated ? <People /> : <Login />}</div>;
 }
