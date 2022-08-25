@@ -10,6 +10,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [signedIn, setIsSignedIn] = useState(false);
 
   const handleLogin = () => {
     if (password.length < 1) {
@@ -23,6 +24,9 @@ const Login = () => {
     }
     console.log(email);
     console.log(password);
+    if (email && password) {
+      console.log('Signed In');
+    }
   };
 
   const handleReset = () => {

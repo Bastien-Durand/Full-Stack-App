@@ -3,7 +3,7 @@ import Login from './Components/Login/Login';
 import './App.css';
 
 function App() {
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return isAuthenticated ? <Navbar /> : <Login />;
 }
