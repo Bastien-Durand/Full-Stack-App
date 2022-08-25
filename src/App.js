@@ -1,13 +1,11 @@
 import Navbar from './Components/Navbar/Navbar';
+import Login from './Components/Login/Login';
 import './App.css';
 
 function App() {
-  return <Navbar />;
+  const isAuthenticated = true;
+
+  return isAuthenticated ? <Navbar /> : <Login />;
 }
 
 export default App;
-
-{
-  // const isAuthenticated = false;
-  /* <div className='App'>{isAuthenticated ? <People /> : <Login />}</div>; */
-}
